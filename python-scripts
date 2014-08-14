@@ -428,3 +428,51 @@ for i in range(1,101):
          print "Kevin Bacon"
      else:
          print i
+
+
+!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+''' codigo en python para solucionar el problema:
+Bouncy numbers
+==============
+
+Working from left-to-right if no digit is exceeded by the digit to its left it is called an increasing number; for example, 134468.
+Similarly if no digit is exceeded by the digit to its right it is called a decreasing number; for example, 66420.
+We shall call a positive integer that is neither increasing nor decreasing a "bouncy" number; for example, 155349.
+Clearly there cannot be any bouncy numbers below one-hundred, but just over half of the numbers below one-thousand (525) are bouncy. In fact, the least number for which the proportion of bouncy numbers first reaches 50% is 538.
+
+Surprisingly, bouncy numbers become more and more common and by the time we reach 21780 the proportion of bouncy numbers is equal to 90%.
+Find the least number for which the proportion of bouncy numbers is exactly 99%.
+'''
+
+
+def bouncy(num): #funcion bouncy
+    increment = False
+    decrement = False
+    n = str(num)
+    for d in range(1, len(n)):
+        if int(n[d]) > int(n[d - 1]):
+            increment = True   #retorna numeros incrementales
+        elif int(n[d]) < int(n[d - 1]):
+            decrement = True   #retorna numeros decrementales
+
+        if increment and decrement:  #retorna solo numeros bouncy
+            return True
+
+    return False
+
+def find():
+    i = 1
+    b = 0
+    p = 0.0
+    while True:
+        if bouncy(i):
+            b+= 1  #contador de numeros bouncy
+
+        p = (b / i)
+        if p >= .99:  #hallando porcentaje deseado 99%
+            print(i)  #imprimiendo porcentaje
+            return(i)
+        i += 1
+find() #llamando funcion que encuentra porcentaje
