@@ -417,3 +417,14 @@ garbled = "IXXX aXXmX aXXXnXoXXXXXtXhXeXXXXrX sXXXXeXcXXXrXeXt mXXeXsXXXsXaXXXXX
 message = filter(lambda x: x != "X"  , garbled)
 print message
 
+## manage of multiples prints a string for 3 and 5 multiples, else prints the number
+
+for i in range(1,101):
+     if i%3 == 0:
+         print "kevin"
+     elif i%5 == 0:
+         print "bacon"
+     elif i%15 == 0 :
+         print "Kevin Bacon"
+     else:
+         print i
