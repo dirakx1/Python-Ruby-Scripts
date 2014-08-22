@@ -220,7 +220,6 @@ guess_col = int(raw_input("Guess Col:"))
 print ship_row
 print ship_col
 
-# Write your code below!
 
 if ship_row == guess_row and ship_col == guess_col:
     print "Congratulations! You sank my battleship!"
@@ -430,7 +429,7 @@ for i in range(1,101):
          print i
 
 
-!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 ''' codigo en python para solucionar el problema:
@@ -476,3 +475,24 @@ def find():
             return(i)
         i += 1
 find() #llamando funcion que encuentra porcentaje
+
+#utilizando api de wepay
+# download the Python SDK at https://github.com/wepay/Python-SDK o pipi install wepay
+from wepay import WePay
+wepay = WePay()
+wepay = WePay(production=False,access_token='STAGE_df1684a1c7b91f0de51b72e5890891b92d34e47fb3cb48d4dbd8d2a89fa253cc')
+response = wepay.call('/preapproval/create', {
+	'account_id': 161624111,
+	'period': 'monthly',
+	'end_time': '2013-12-25',
+	'amount': '19.99',
+	'short_description': 'A subscription to our magazine.',
+	'redirect_uri': 'http://example.com/success/',
+	'auto_recur': True
+})
+
+print response
+
+# redirect user to response['checkout_uri']
+
+
