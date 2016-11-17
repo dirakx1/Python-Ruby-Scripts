@@ -8,8 +8,8 @@ import csv
 import requests
  
  
-GITHUB_USER = 'RafaelOrtiz'
-GITHUB_PASSWORD = 'fuckyou'
+GITHUB_USER = '******'
+GITHUB_PASSWORD = '*****'
 REPO = 'nokiadev/zina-design'  # format is username/repo
 ISSUES_FOR_REPO_URL = 'https://api.github.com/repos/%s/issues' % REPO
 AUTH = (GITHUB_USER, GITHUB_PASSWORD)
