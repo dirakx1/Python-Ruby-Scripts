@@ -495,4 +495,11 @@ print response
 
 # redirect user to response['checkout_uri']
 
+## imap testing 
+
+import imaplib
+email = imaplib.IMAP4_SSL('service.service.com')
+email.login('mail@mail.com','passwd')
+email.logout()
+
 
