@@ -1,28 +1,23 @@
 #!/usr/bin/env python
 
-# first export proper variables run export.sh
-# then run install on each repo, after updating each one  you have to cd to $HOME/repo
-# then now name of docker image and version 
-# then run docker comands tag and push 
-# You could call a init.sh shell here to run first steps
+# example on XMl parsing and subprocess use
 
 import os,subprocess
 import xml.etree.ElementTree as ET
 
-tree = ET.parse('pom.xml')
+tree = ET.parse('pom.xml') # parsing xml
 root = tree.getroot()
 registry="EXAMPLE"
 
 ms_name=root[3].text
 ms_version=root[4].text
 
-print "TODO MAKING repo dir,,,,,,,,,,,,,,,,,"
-print "toDO CLONING repos.................."
-print "This is the MICROSERVICE name ......."
+
+print "This is the name ......."
 print "....................................."
 print root[3].text    
 print "....................................."
-print "This is the DOCKER IMAGE version....."
+print "This is the  version....."
 print root[4].text
 print "....................................."
 
