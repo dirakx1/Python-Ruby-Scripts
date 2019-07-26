@@ -1,2 +1,2 @@
 # scripts
-python, ruby. js scripts
+python, ruby, js scripts
