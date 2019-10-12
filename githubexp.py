@@ -3,6 +3,8 @@ Exports Issues from a specified repository to a CSV file
 
 Uses basic authentication (Github username + password) to retrieve Issues
 from a repository that username has access to. Supports Github API v3.
+
+For security reasons please DONT upload GITHUB_USER / GITHUB_PASSWORD to any github repo
 """
 import csv
 import requests
