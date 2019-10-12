@@ -1,4 +1,4 @@
-# examples of scrapping with beautifulsoup
+# Examples of scrapping with beautifulsoup
 
 from bs4 import BeautifulSoup
 import os
@@ -29,5 +29,5 @@ with open ("tr.html") as fp1:
     if running == "RUNNING1":
         print "OK"
     else:
-       kill_command = "pwd"   # kill flowbot queues
+       kill_command = "pwd"   
        os.system(kill_command)
