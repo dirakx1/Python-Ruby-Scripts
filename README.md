@@ -5,6 +5,6 @@ python, ruby, js scripts
 
 * sockets
 * tornado
-* netamiko 
+* netmiko (https://pypi.org/project/netmiko/) 
 * paramiko (ssh) 
 
