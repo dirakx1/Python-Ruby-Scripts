@@ -8,3 +8,6 @@ python, ruby, js scripts
 * netmiko (https://pypi.org/project/netmiko/) 
 * paramiko (ssh) 
 
+###  References
+* https://hub.packtpub.com/using-python-automation-to-interact-with-network-devices-tutorial/
+
