@@ -10,4 +10,5 @@ python, ruby, js scripts
 
 ###  References
 * https://hub.packtpub.com/using-python-automation-to-interact-with-network-devices-tutorial/
+* https://www.topcoder.com/community/learn
 
